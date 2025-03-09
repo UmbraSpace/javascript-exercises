@@ -24,12 +24,20 @@ const multiply = function(nums) {
 
 };
 
-const power = function() {
-	
+const power = function(num, exponent) {
+	let output = 1;
+  for (let i = 0; i < exponent; i++){
+    output *= num;
+  }
+  return output;
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+	let output = 1;
+  for (let i = 1; i <= num; i++){
+    output *= i;
+  }
+  return output;
 };
 
 // Do not edit below this line
